@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+	<head> 	
+	<link rel="stylesheet" type="text/css" href="cssfolder/operations.css">
+	</head>
+
+	<body>
+	<div class="header">
+		<img src="images/heart.jpg" width="100%" height="30%">
+	</div>		
+	<div class="nav">
+		<center><ul><li><a href="firstpage.html"> Logout </a></li>
+		<li><a href="custadd.html"> Home</a></li>
+		</ul></center>
+	</div>
+	<div class="custdiv">
+
+		<center style="margin-top: 20px;"><font color="white" size="5px" face="verdana">Search:  </font><input type="text" name="search" value="Enter bill number" style="font-size: 15px; width: 50%; margin-right: 5px; height: 20px"><button onclick="location.href = 'bill.html';"><img src="images/search.jpg" width="17px"></button></center>
+
+		<div class="customer"><center class="formtitle"><span>A</span>dd Customer Details<center><br>
+
+		<form action="items.html" method="post">
+		<table class='fitted'> 
+		<tr>
+			<td>Customer ID:</td><td><input type="text" name="CID"></td>
+		</tr>
+		<tr>
+			<td>Name:</td><td><input type="text" name="CName"></td>
+		</tr>
+		<tr>
+			<td>Contact:</td><td><input type="text" name="cno"></td>
+		</tr>
+		<tr>
+			<td>Date:</td><td><input type="text" name="date"></td>
+		</tr>
+		<tr>	
+			<td>Bill No.:</td><td><input type="text" name="billno"></td>
+		</tr>
+		<tr>
+		<td colspan="2"><center><input type="submit" name="add" value="Select Items" class="btn"></center></td>
+		</tr>
+		</table>		
+		</form>
+	</div>
+	</div>
+	
+	</body>
+</html>

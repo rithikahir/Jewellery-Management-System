@@ -1,0 +1,119 @@
+<?php
+include("php/demo.php");
+?>
+<!DOCTYPE HTML>
+<html>
+	<head> 	
+	<link rel="stylesheet" type="text/css" href="cssfolder/firstpage.css">
+	</head>
+
+	<body>
+	<div class="header">
+		<img src="images/heart.jpg" width="100%" height="30%">
+	</div>		
+	<div class="nav">
+		<center><ul><li><a href="firstpage.html">Home </a></li>
+		<li><a href="#"> About us</a></li>
+		<li><a href="#"> Contact us</a></li>
+		</ul></center>
+	</div>
+	<div class="imglog">
+	<div class="images">
+	<center>
+
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+  			<img src="images/ss1.jpg" style="width:90%; height:80%">
+			</div>
+
+			<div class="mySlides fade">
+ 			<img src="images/ss3.jpg" style="width:90%; height:80%">
+			</div>
+
+			<div class="mySlides fade">
+ 			<img src="images/ss7.jpg" style="width:90%; height:80%">
+			</div>
+
+			<div class="mySlides fade">
+ 			<img src="images/ss8.jpg" style="width:90%; height:80%">
+			</div>
+
+			<div class="mySlides fade">
+ 			<img src="images/ss2.jpg" style="width:90%; height:80%">
+			</div>
+
+			<br>
+
+		<div style="text-align:center">
+  			<span class="dot"></span> 
+  			<span class="dot"></span> 
+ 			 <span class="dot"></span> 
+ 			 <span class="dot"></span> 
+ 			 <span class="dot"></span> 
+		</div>
+			<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+    			var i;
+   			 var slides = document.getElementsByClassName("mySlides");
+    			var dots = document.getElementsByClassName("dot");
+    			for (i = 0; i < slides.length; i++) {
+       			slides[i].style.display = "none";  
+    			}
+   			 slideIndex++;
+   			 if (slideIndex > slides.length) {slideIndex = 1}    
+    			for (i = 0; i < dots.length; i++) {
+        			dots[i].className = dots[i].className.replace(" active", "");
+    			}
+    			slides[slideIndex-1].style.display = "block";  
+    			dots[slideIndex-1].className += " active";
+    			setTimeout(showSlides, 2000); // Change image every 2 seconds
+			}
+			</script>
+
+		</div>
+	</center>
+
+	</div>
+
+	<div class="login">
+	<div class="admin"><center class="formtitle"><span>A</span>dmin Login</center><br>
+		<form action="" method="post">
+		<center><table>
+		<tr>
+			<td>Admin ID:</td><td><input type="text" name="AID"></td>
+		<tr>
+		<tr>
+			<td>Password:</td><td><input type="password" name="Apass"></td>
+		</tr>
+		<tr>	
+			<td colspan="2"><center><input type="submit" class="btn" name="Login" value="Login"></center></td>
+		</tr>
+		</table></center>
+		</form>
+	<span style="color: red"><?php echo $error; ?></span>
+	</div>		
+	<div class="employee"><center class="formtitle"><span>E</span>mployee Login</center><br>
+		<form action="custadd.html" method="post">
+		<center><table>
+			<tr>
+				<td>Employee ID:</td><td><input type="text" name="EID"></td>
+			</tr>
+			<tr>
+				<td>Password:</td><td><input type="password" name="Epass"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><center><input type="submit" class="btn" name="Login" value="Login"></center></td>
+			</tr>
+		</table></center>
+		</form>
+	<span style="color: red"><?php echo $error; ?></span>
+	</div>		
+	</div>
+	</div>
+	
+	</body>
+</html>

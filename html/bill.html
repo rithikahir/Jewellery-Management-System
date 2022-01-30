@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+	<head> 	
+	<link rel="stylesheet" type="text/css" href="cssfolder/bill.css">
+
+      	</head>
+
+	<body>
+	<div class="header">
+		<img src="images/heart.jpg" width="100%" height="30%">
+	</div>		
+	<div class="nav">
+		<center><ul>
+		<li><a href="firstpage.html"> Logout</a></li>
+		<li><a href="items.html">Add Items</a></li>
+		<li><a href="custadd.html">Home </a></li>
+		</ul></center>
+	</div>
+	<div class="imglog">
+                   <div class="outer">
+		<div class="stock"><center class="formtitle"><span>B</span>ill Details<center><br>
+			<form>
+			<table>
+  				<tr>
+    				<td>Bill No : </td>
+  				 <td><input type="numeric" name="billno"  /></td>
+  				</tr>
+				<tr>
+    				<td>Customer ID : </td>
+  				 <td><input type="numeric" name="cid"   /></td>
+  				</tr>
+				<tr>
+    				<td>Employee ID : </td>
+  				 <td><input type="numeric" name="eid"   /></td>
+  				</tr>
+				<tr>
+    				<td>Date : </td>
+  				<td><input type="date" name="date"   /></td>
+  				</tr>
+				<tr>
+    				<td> Purchase / Return :</td>
+  				 <td><input type="text" name="pr"   /></td>
+  				</tr> 				
+				<tr>
+				<td>Items: </td>
+				</tr>
+				<tr>
+				<td colspan="2"><textarea rows="10" cols="80">|JID	|Quantity  |Grams  |Rate  |Making Cost	|Total Cost	|
+				</textarea></td>
+				</tr>
+				<tr>
+    				<td>Total Quantity of Purchase : </td>
+  				 <td><input type="numeric" name="quant"   /></td>
+  				</tr>
+				<tr>
+    				<td>Tax : </td>
+  				 <td><input type="numeric" name="tax"   /></td>
+  				</tr>
+				<tr>
+    				<td>Discount : </td>
+  				 <td><input type="numeric" name="discount" /></td>
+  				</tr>
+				<tr>
+    				<td>Total Amount : </td>
+  				 <td><input type="numeric" name="amount"/></td>
+  				</tr>
+   
+			</table><br><br>
+			<button onclick="validation();" class="btn">Save Bill </button>  
+			</form>
+		</div>
+	</div>
+	</div>
+	</div>
+	</body>
+</html>
+
+	
